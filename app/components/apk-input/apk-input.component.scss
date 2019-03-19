@@ -2,8 +2,7 @@
   width : 100%;
 }
 
-
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
-   border-top: .44375em solid transparent;
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+   border-top: .3em solid transparent;
    padding: 0.5em 0 0.5em 0;
 }

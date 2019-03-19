@@ -1,10 +1,13 @@
 <h4>Overrided native select</h4>
 
-<mat-form-field appearance="outline" class="full-width">
-  <select matNativeControl required>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="mercedes">Mercedes</option>
-    <option value="audi">Audi</option>
-  </select>
+<mat-form-field  appearance="outline" class="full-width">
+   <span matPrefix ><mat-icon>search</mat-icon></span>
+  <mat-select panelClass="example-panel" >
+    <mat-option value="volvo">Volvo </mat-option>
+    <mat-option value="saab">saab </mat-option>
+    <mat-option value="mercedes">mercedes </mat-option>
+    <mat-option value="audi">audi </mat-option>
+    
+  </mat-select>
+  
 </mat-form-field>
