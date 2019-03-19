@@ -1,7 +1,8 @@
 {
   "apps": [{
     "styles": [
-      "styles.css"
+      "styles.scss",
+      "theme.scss"
       ]
   }]
 }

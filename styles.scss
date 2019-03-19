@@ -1,4 +1,3 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 body { 
   font-family: Roboto, Arial, sans-serif;
@@ -14,7 +13,7 @@ body {
   float: right;
 }
 
-.mat-form-field-infix {
+.mat-form-field-appearance-outline .mat-form-field-infix {
    border-top: .44375em solid transparent;
    padding: 0.5em 0 0.5em 0;
 }
