@@ -1,15 +1,27 @@
 <form class="example-form">
-  <label>Name </label>
-  <mat-form-field appearance="outline" class="example-full-width">
+  <mat-form-field class="example-full-width">
     <input matInput placeholder="Favorite food" value="Sushi">
   </mat-form-field>
 
- 
 
-  <mat-form-field appearance="outline" class="example-full-width">
-    <mat-label>Legacy form field </mat-label>
-    <input matInput placeholder="Favorite food" value="Sushi">
-  </mat-form-field>
+  <apk-input> </apk-input>
+
+
+
+  <h4>Basic native select</h4>
+<mat-form-field>
+  <mat-label>Cars</mat-label>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>
+
+
+
+<apk-select></apk-select>
 </form>
 
 

@@ -10,6 +10,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
 import {InputOverviewExample} from './app/input-overview-example';
+import {ApkInputComponent} from './app/components/apk-input/apk-input.component';
+
+import {ApkSelectComponent} from './app/components/apk-select/apk-select.component';
 
 @NgModule({
   imports: [
@@ -22,7 +25,7 @@ import {InputOverviewExample} from './app/input-overview-example';
     ReactiveFormsModule,
   ],
   entryComponents: [InputOverviewExample],
-  declarations: [InputOverviewExample],
+  declarations: [InputOverviewExample, ApkInputComponent, ApkSelectComponent ],
   bootstrap: [InputOverviewExample],
   providers: []
 })
