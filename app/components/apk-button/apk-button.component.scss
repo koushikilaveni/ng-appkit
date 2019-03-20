@@ -1,0 +1,6 @@
+
+:host ::ng-deep {
+  .mat-ripple-element {
+    transition-duration: 0ms !important;
+  }
+}

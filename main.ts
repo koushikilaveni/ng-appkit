@@ -14,6 +14,8 @@ import {ApkInputComponent} from './app/components/apk-input/apk-input.component'
 
 import {ApkSelectComponent} from './app/components/apk-select/apk-select.component';
 
+import {ApkButtonComponent} from './app/components/apk-button/apk-button.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import {ApkSelectComponent} from './app/components/apk-select/apk-select.compone
     ReactiveFormsModule,
   ],
   entryComponents: [InputOverviewExample],
-  declarations: [InputOverviewExample, ApkInputComponent, ApkSelectComponent ],
+  declarations: [InputOverviewExample, ApkInputComponent, ApkSelectComponent , ApkButtonComponent],
   bootstrap: [InputOverviewExample],
   providers: []
 })
