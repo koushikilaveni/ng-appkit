@@ -10,7 +10,7 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 export class ApkInputComponent implements OnInit {
 
 @Input() disabled = false;
-
+@Input() placeholder ='';
   constructor() { }
 
   ngOnInit() {
