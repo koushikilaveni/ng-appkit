@@ -16,7 +16,7 @@
   .mat-form-field-appearance-outline {
     &.mat-focused {
         .mat-form-field-outline-thick{
-          color:mat-color($primary) !important;
+          color: mat-color($app-primary) !important;
         }
     }
     
