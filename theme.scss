@@ -46,3 +46,42 @@ $candy-app-warn:    mat-palette($mat-red);
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 
 @include angular-material-theme($candy-app-theme);
+
+
+/// Material component style override
+
+
+// .apk-input {
+//   .full-width {
+//     width : 100%;
+//   }
+
+//   .mat-form-field-appearance-outline .mat-form-field-infix {
+//     border-top: .3em solid transparent;
+//     padding: 0.5em 0 0.5em 0;
+//   }
+// }
+
+
+.apk-select {
+   .full-width {
+    width : 100%;
+  }
+
+  .mat-form-field-appearance-outline {
+    
+    .mat-form-field-infix {
+    border-top: .3em solid transparent;
+    padding: 0.5em 0 0.5em 0;
+    }
+
+    .mat-form-field-prefix {
+      top : 0.4em;
+    }
+
+    .mat-select-arrow-wrapper {
+        transform: initial;
+    }
+  }
+}
+ 

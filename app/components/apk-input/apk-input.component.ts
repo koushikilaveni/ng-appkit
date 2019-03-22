@@ -5,6 +5,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   templateUrl: './apk-input.component.html',
   styleUrls: ['./apk-input.component.scss'],
   encapsulation: ViewEncapsulation.None
+
 })
 export class ApkInputComponent implements OnInit {
 
