@@ -1,66 +1,22 @@
 @import '~@angular/material/theming';
+@import 'variables.scss';
 
 @include mat-core();
 
 
-$primary: (
-    50 : #feebe5,
-    100 : #fecdbe,
-    200 : #fdac93,
-    300 : #fc8b68,
-    400 : #fb7247,
-    500 : #fa5927,
-    600 : #f95123,
-    700 : #f9481d,
-    800 : #f83e17,
-    900 : #f62e0e,
-    A100 : #ffffff,
-    A200 : #fff0ee,
-    A400 : #ffc2bb,
-    A700 : #ffaca1,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
-); 
-
-$candy-app-primary: mat-palette($primary);
-$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$app-primary: mat-palette($primary);
+$app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-red);
+$app-warn:    mat-palette($mat-red);
 
 
-$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
-@include angular-material-theme($candy-app-theme);
+@include angular-material-theme($app-theme);
 
 
 /// Material component style override
-
-
-// .apk-input {
-//   .full-width {
-//     width : 100%;
-//   }
-
-//   .mat-form-field-appearance-outline .mat-form-field-infix {
-//     border-top: .3em solid transparent;
-//     padding: 0.5em 0 0.5em 0;
-//   }
-// }
 
 
 .apk-select {

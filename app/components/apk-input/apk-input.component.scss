@@ -1,12 +1,23 @@
+
+@import "~@angular/material/theming";
+@import '../../../theme.scss';
+
 .apk-input {
   .full-width {
     width : 100%;
   }
 
+  .app-input-label {
+    font-size: 0.75rem;
+    line-height: 1.58;
+    margin-bottom: 0.625rem;
+  }
+
   .mat-form-field-appearance-outline {
-
-    .mat-focused {
-
+    &.mat-focused {
+        .mat-form-field-outline-thick{
+          color:mat-color($primary) !important;
+        }
     }
     
     .mat-form-field-infix {
@@ -16,6 +27,7 @@
     .mat-form-field-outline{
       background-color: #f5f5f5;
       border: none;
+      color: transparent;
       border-radius: 0.125rem;
     }
     .mat-form-field-outline-start{
@@ -25,11 +37,11 @@
       border-radius: 0 0.125rem 0.125rem 0;
     }
     .mat-form-field-flex{
-      // &:hover:not(.mat-focused){
-      //   .mat-form-field-outline-thick{
-      //     color: transparent;
-      //   }
-      // }
+      &:hover:not(.mat-focused){
+        .mat-form-field-outline-thick{
+          color: transparent;
+        }
+      }
     }
   }
 }
