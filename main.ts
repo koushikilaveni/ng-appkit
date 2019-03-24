@@ -16,6 +16,13 @@ import {ApkSelectComponent} from './app/components/apk-select/apk-select.compone
 
 import {ApkButtonComponent} from './app/components/apk-button/apk-button.component';
 
+import {ApkHeaderComponent} from './app/components/apk-header/apk-header.component';
+
+import {ApkFooterComponent} from './app/components/apk-footer/apk-footer.component';
+
+import {PageComponent} from './app/page/page.component';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -27,8 +34,8 @@ import {ApkButtonComponent} from './app/components/apk-button/apk-button.compone
     ReactiveFormsModule,
   ],
   entryComponents: [InputOverviewExample],
-  declarations: [InputOverviewExample, ApkInputComponent, ApkSelectComponent , ApkButtonComponent],
-  bootstrap: [InputOverviewExample],
+  declarations: [InputOverviewExample, ApkInputComponent, ApkSelectComponent , ApkButtonComponent, ApkHeaderComponent, ApkFooterComponent, PageComponent],
+  bootstrap: [PageComponent],
   providers: []
 })
 export class AppModule {}
