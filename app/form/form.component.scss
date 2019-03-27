@@ -1,6 +1,6 @@
 .content {
-    // height: calc(100% - 2.75rem);
-    height: calc(100vh - 2.75rem);
+     height: calc(100% - 2.75rem);
+    // height: calc(100vh - 2.75rem);
 }
 
 .main-wrapper {
@@ -16,10 +16,8 @@
 .footer-wrapper {
     width: 100%;
     max-width: 62.5rem;
-    position: absolute;
     left: 50%;
     bottom: 0.625rem;
-    transform: translateX(-50%);
     padding: 0 0.9375rem;
 
 }

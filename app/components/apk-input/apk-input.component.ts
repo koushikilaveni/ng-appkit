@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
+
 
 @Component({
   selector: 'apk-input',
@@ -11,6 +13,9 @@ export class ApkInputComponent implements OnInit {
 
 @Input() disabled = false;
 @Input() placeholder ='';
+@Input() label = 'Text field';
+@Input() control: FormControl;
+@Input() controlName: string = ''; 
   constructor() { }
 
   ngOnInit() {

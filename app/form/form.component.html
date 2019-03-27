@@ -13,57 +13,77 @@
     <div>
       <div class="a-panel a-margin-tp-50 a-p-20" >
         <div class="flex-wrap section-two">
+
+        <form [formGroup]="form"  (ngSubmit)="submit()">
           <div class="row">
               <div class="col-md-6" >
-                <apk-input> </apk-input>
+                <apk-input label="First Name"
+                    controlName="First Name"    [control]="form.get('firstName')" > 
+                    </apk-input>
               </div>
 
               <div class="col-md-6" > 
-                <apk-input> </apk-input>
+                <apk-input label="Last Name"
+                      controlName="Last Name"  [control]="form.get('lastName')" > </apk-input>
               </div>
           </div>
 
           <div class="row">
               <div class="col-md-6" >
-                <apk-input> </apk-input>
+                <apk-input label="Email"
+                        [control]="form.get('email')" > </apk-input>
               </div>
 
               <div class="col-md-6" > 
-                <apk-input> </apk-input>
-              </div>
-          </div>
-
-
-          <div class="row">
-              <div class="col-md-6" >
-                <apk-input> </apk-input>
-              </div>
-
-              <div class="col-md-6" > 
-                <apk-input> </apk-input>
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col-md-6" >
-                <apk-input> </apk-input>
-              </div>
-
-              <div class="col-md-6" > 
-                <apk-input> </apk-input>
+                <apk-input label="Phone"
+                        [control]="form.get('phone')" > </apk-input>
               </div>
           </div>
 
 
           <div class="row">
               <div class="col-md-6" >
-                <apk-input> </apk-input>
+                <apk-input label="Description"
+                        [control]="form.get('description')" > </apk-input>
               </div>
 
               <div class="col-md-6" > 
-                <apk-input> </apk-input>
+                <apk-input label="field1"
+                        [control]="form.get('field1')"> </apk-input>
               </div>
           </div>
+
+          <div class="row">
+              <div class="col-md-6" >
+                <apk-input label="field2"
+                        [control]="form.get('field2')"> </apk-input>
+              </div>
+
+              <div class="col-md-6" > 
+                <apk-input label="filed3"
+                        [control]="form.get('field3')"> </apk-input>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-md-6" >
+                <apk-input label="filed4"
+                        [control]="form.get('field4')"> </apk-input>
+              </div>
+
+              <div class="col-md-6" > 
+                <apk-input label="filed5"
+                        [control]="form.get('field5')"> </apk-input>
+              </div>
+          </div>
+
+          <div class="row justify-content-end">
+              <div class="col-md-6 justify-content-end" >
+                <apk-button>Submit</apk-button>
+              </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class="footer-wrapper">
