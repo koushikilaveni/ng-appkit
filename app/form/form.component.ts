@@ -14,16 +14,16 @@ export class FormComponent implements OnInit {
   ngOnInit() {
 
     this.form = this.fb.group({
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
-            description: ['', [Validators.required]],
-            email: ['', [Validators.required, Validators.email]],
-            phone: ['', [Validators.required]],
-            field1: ['', [Validators.required]],
-            field2: ['', [Validators.required]],
-            field3: ['', [Validators.required]],
-            field4: ['', [Validators.required]],
-            field5: ['', [Validators.required]]
+            firstName: [''],
+            lastName: ['' ],
+            description: [''],
+            email: ['' ],
+            phone: [''],
+            field1: [''],
+            field2: [''],
+            field3: [''],
+            field4: [''],
+            field5: ['']
 
         });
   }
